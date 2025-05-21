@@ -1,0 +1,95 @@
+/* Background & container */
+.software-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #d0e8ff, #e6f0ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Card */
+.software-form-card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 450px;
+  backdrop-filter: blur(10px);
+  animation: fadeInUp 1s ease-in-out;
+  transition: transform 0.3s ease;
+}
+
+.software-form-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #0d6efd;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* Inputs */
+input,
+textarea {
+  width: 100%;
+  padding: 0.9rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #0d6efd;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.2);
+}
+
+/* Button */
+.animated-btn {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #0d6efd;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.animated-btn:hover {
+  background-color: #0b5ed7;
+  transform: scale(1.02);
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .software-form-card {
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

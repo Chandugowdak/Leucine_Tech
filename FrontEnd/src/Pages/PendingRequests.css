@@ -1,0 +1,19 @@
+.request-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 1rem;
+  }
+  
+  .request-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title .badge {
+    font-size: 0.9rem;
+    padding: 0.4em 0.6em;
+  }
+  
+  .btn {
+    width: 48%;
+  }
+  

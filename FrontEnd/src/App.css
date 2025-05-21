@@ -1,0 +1,21 @@
+/* Main layout background */
+.custom-main-wrapper {
+    background: linear-gradient(135deg, #f3f4f6, #e0e7ff);
+    min-height: 100vh;
+  }
+  
+  /* Content box styling */
+  .content-box {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Add subtle hover to elevate box */
+  .content-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
+  

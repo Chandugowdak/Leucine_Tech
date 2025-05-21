@@ -1,0 +1,76 @@
+/* Sleek Navbar Background */
+.custom-navbar {
+  background: #1c1f26;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Brand Styling */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #00d9ff !important;
+  letter-spacing: 1px;
+}
+
+/* Pro part of brand */
+.navbar-brand .pro {
+  color: #f39c12;
+}
+
+/* Nav links */
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem 0.75rem;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Underline effect on hover */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #00d9ff;
+  transition: 0.4s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #00d9ff !important;
+}
+
+/* Logout button style */
+.nav-btn {
+  border: 1px solid #00d9ff;
+  color: #00d9ff;
+  background-color: transparent;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #00d9ff;
+  color: #1c1f26;
+  font-weight: 600;
+}
