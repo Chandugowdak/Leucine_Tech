@@ -27,16 +27,18 @@ function PendingRequests() {
                 <div className="card-body">
                   <h5 className="card-title">
                     <span className="badge bg-info text-dark">
-                      {r.user.username}
+                      {r.user?.username || "Unknown User"}
                     </span>{" "}
                     requested{" "}
                     <span className="badge bg-warning text-dark">
-                      {r.accessType}
+                      {r.accessType || "Unknown Access"}
                     </span>
                   </h5>
                   <p className="card-text">
                     Software:{" "}
-                    <strong className="text-primary">{r.software.name}</strong>
+                    <strong className="text-primary">
+                      {r.software?.name || "N/A"}
+                    </strong>
                   </p>
                   <div className="d-flex justify-content-between">
                     <button
